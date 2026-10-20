@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>School Tour Sekolah Persada</title>
+  <meta name="description" content="Jadwalkan school tour di Sekolah Persada, Jatibening Bekasi. Lihat langsung kelas kecil, kegiatan kreasi, dan suasana belajar yang aman.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span>Sekolah Persada</span>
+    </a>
+    <a class="topbar-link" href="#booking">Jadwalkan tour</a>
+  </div>
+</header>
+
+<main>
+  <!-- 1. Kenali situasinya -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">School Tour · Jatibening, Bekasi</p>
+        <h1>Lihat sendiri tempat anak Anda bisa belajar dengan aman dan berani.</h1>
+        <p class="lead">Anaknya sebenarnya pintar, tapi di sekolah reguler kehilangan semangat? Datang dan rasakan suasana kelas kecil kami selama satu jam. Ngobrol dengan guru, lihat karya murid, dan tanyakan apa saja.</p>
+        <a class="btn btn-green" href="#booking">Pilih jadwal tour</a>
+      </div>
+      <figure class="photo-slot">
+        <div class="photo-ph">
+          <span>Foto kegiatan asli murid<br><small>(contoh: anak sedang melukis atau bermain musik)</small></span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. Bukti -->
+  <section class="proof">
+    <div class="wrap proof-grid">
+      <div class="stat"><b>2010</b><span>Sekolah Persada berdiri</span></div>
+      <div class="stat"><b>A</b><span>Terakreditasi Paket A, B, C</span></div>
+      <div class="stat"><b>10–12</b><span>anak per kelas</span></div>
+      <div class="stat"><b>200+</b><span>alumni lanjut ke PTN &amp; PTS</span></div>
+    </div>
+  </section>
+
+  <!-- 2 & 3. Mekanisme + hilangkan kekhawatiran -->
+  <section class="what">
+    <div class="wrap">
+      <h2>Yang akan Anda lihat saat tour</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Kelas kecil yang personal</h3>
+          <p>Setiap anak dikenal gurunya. Tidak ada yang tenggelam di barisan belakang.</p>
+        </article>
+        <article class="card">
+          <h3>Kelas kreasi &amp; life-skill</h3>
+          <p>Musik, public speaking, memasak, sampai berkebun organik. Bakat dikejar dengan serius.</p>
+        </article>
+        <article class="card">
+          <h3>Lingkungan aman, berani stand up</h3>
+          <p>Sekolah inklusi yang menjaga anak dari bullying dan melatihnya percaya diri bicara.</p>
+        </article>
+        <article class="card">
+          <h3>Tetap jalur ke universitas</h3>
+          <p>Ijazah sah, Akreditasi A. Alumni kami kuliah di UI, ITB, UGM, Unpad, Binus, dan lainnya.</p>
+        </article>
+      </div>
+      <blockquote class="quote">
+        “Dulu takut ke sekolah. Sekarang berangkat sendiri, dan sudah berani presentasi di depan kelas.”
+        <cite>Contoh testimoni orang tua — ganti dengan testimoni asli</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 5. Ajak melangkah -->
+  <section class="booking" id="booking">
+    <div class="wrap booking-grid">
+      <div class="booking-info">
+        <h2>Jadwalkan school tour</h2>
+        <p>Tour berlangsung sekitar 60 menit, gratis, dan didampingi tim kami. Isi formulir, lalu Anda akan diarahkan ke WhatsApp admin untuk konfirmasi.</p>
+        <ul class="sched">
+          <li><b>Selasa &amp; Kamis</b> · 09.00 atau 13.00 WIB</li>
+          <li><b>Sabtu</b> · 09.00 WIB</li>
+        </ul>
+        <p class="muted">Lokasi: Jatibening, Bekasi. Alamat lengkap dikirim saat konfirmasi.</p>
+      </div>
+
+      <form id="tourForm" class="form" novalidate>
+        <div class="field">
+          <label for="parent">Nama orang tua</label>
+          <input id="parent" name="parent" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="phone">Nomor WhatsApp</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="08xxxxxxxxxx" required autocomplete="tel">
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="child">Nama anak</label>
+            <input id="child" name="child" required>
+          </div>
+          <div class="field">
+            <label for="level">Jenjang</label>
+            <select id="level" name="level" required>
+              <option value="">Pilih…</option>
+              <option>KB-TK</option>
+              <option>SD (Paket A)</option>
+              <option>SMP (Paket B)</option>
+              <option>SMA (Paket C)</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="date">Tanggal tour</label>
+            <input id="date" name="date" type="date" required>
+            <small class="hint">Selasa, Kamis, atau Sabtu</small>
+          </div>
+          <div class="field">
+            <label for="time">Jam</label>
+            <select id="time" name="time" required disabled>
+              <option value="">Pilih tanggal dulu</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="note">Ada yang ingin ditanyakan? <span class="muted">(opsional)</span></label>
+          <textarea id="note" name="note" rows="3"></textarea>
+        </div>
+        <p class="error" id="formError" role="alert" hidden></p>
+        <button type="submit" class="btn btn-red">Kirim &amp; lanjut ke WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><b>Sekolah Persada</b> &amp; KB-TK Persada · Jatibening, Bekasi · <a href="https://rumahbelajar-persada.com">rumahbelajar-persada.com</a></p>
+    <p class="muted">PKBM Tamansari Persada</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
